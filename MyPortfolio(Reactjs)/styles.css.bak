@@ -1,0 +1,109 @@
+body, html{
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+	font-family: FreeMono, monospace;
+}
+.nav_bar_sm{
+    display: none;
+	position: fixed;
+	background-color: black;
+	border-bottom: 1px solid #000;
+}
+.nav_bar, .nav_bar_sm{
+	position: fixed;
+	margin: 0;
+	background-color: black;
+	width: 200%;
+	height: 5%;
+	border-bottom: 1px solid #fff;
+	box-shadow: -4px 10px 16px -2px rgba(0,0,0,0.51);
+}
+.nav_bar a, .nav_bar_sm a {
+   text-align: center;
+   padding: 12px;
+   color: #fff;
+   text-decoration: none;
+   font-size: 17px;
+}
+.nav_bar>a:hover{
+	background-color: #777;
+}
+.head{
+	background-color: #000;
+	height: 70%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	box-shadow: -4px 10px 16px -2px rgba(0,0,0,0.51);
+    -webkit-box-shadow: -4px 10px 16px -2px rgba(0,0,0,0.51);
+    -moz-box-shadow: -4px 10px 16px -2px rgba(0,0,0,0.51);
+}
+.head_container{
+	color: #fff;
+	border: 4.5px solid #FFF;
+	width: 40%;
+	text-align: center;
+}
+.about_wrapper {
+	margin: 20px;
+	padding: 25px;
+}
+.about_content{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	padding: 15px;
+}
+.about_content>div{
+    width: 400px;
+    margin: 15px;
+}
+.my_photo {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.my_photo:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.my_img{
+	border-radius: 100%;
+}
+.skills{
+	margin: 30px;
+	background-color: silver;
+	padding: 30px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.home_button{
+	display: iniline-block;
+	width: 1700px; 
+	height: 100%; 
+	background-color: silver; 
+	color: #000;
+	text-decoration: none;
+}
+
+/*Screen size change size control*/
+@media screen and (max-width: 600px) {
+   .nav_bar {
+		display: none;
+   }
+   .nav_bar_sm{
+	   display: flex;
+	   flex-direction: column;
+	   float: right;
+	   padding-left: 0;
+   }
+   .nav_bar_sm a {
+	    display: none;
+		text-align: center;
+   }
+   .about_content{
+	   display: flex;
+	   flex-direction: column;
+	   justify-content: center;
+	   align-items: center;
+	   padding: 12px;
+   }
+}

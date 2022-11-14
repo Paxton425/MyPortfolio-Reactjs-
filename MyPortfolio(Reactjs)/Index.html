@@ -1,0 +1,250 @@
+<DOCTYPE>
+<html>
+	<head>
+		<title>Sphelele Mkhize(Portfolio)</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Raect -->
+		<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+        <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+		<!--EmailJs-->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	</head>
+	<body>
+	<div class="top_nav">
+	<!-- Navigation bar on large screeens--->
+		<div class="nav_bar" id="home">
+			<a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+			<a href="#about"><i class=" fa fa-solid fa-info"></i> About Me</a>
+			<a style="color: white"onclick="viewList()"><i class="fa fa-regular fa-address-book"></i> Portfolio</a>
+			<a href="#contacts"><i class="fa fa-address-card"></i> Contacts</a>
+		</div>
+	<!-- Navigation bar on small screens-->
+		<div class="nav_bar_sm" id="home">
+		    <div class="nav_menu_btn"><i class="fa fa-solid fa-bars"></i> Menu</div>
+			<a class="menuitem" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+			<a class="menuitem" href="#about"><i class=" fa fa-solid fa-info"></i> About Me</a>
+			<a class="menuitem" onclick="viewList()"><i class="fa fa-regular fa-address-book"></i> Portfolio</a>
+			<a class="menuitem" href="#contacts"><i class="fa fa-address-card"></i> Contacts</a>
+		</div>
+		<div class="nav_bar" id="home2" style="display: none;">
+			<a class="active" onclick="goBack()"> < Back</a>
+		</div>
+	</div>
+
+	<div class="documentBody">
+		<header class="head">
+			<div class="head_container">
+				<h1>Sphelele Mkhize</h1>
+				<h2>Junior Software Developer</h2>
+			</div>
+		</header>
+	    <div class="about_wrapper" id="about">
+			<center><h1>About Me</h1></center>
+			<div class="about_content">
+				<div class="my_photo">
+					<img class="my_img" src="images/my_img.jpeg" alt="Avatar" style="width:100%"><hr />
+					<div class="container" style="padding: 2px 16px;">
+						<h4><b>Sphelele Mkhize</b></h4>
+						<p>Software Developer</p>
+					</div>
+				</div>
+				<div>
+					<p>My name Sphelele a self-taught full stack web developer. I live in South Africa. 
+					I have not landed any job yet but I have been designing some interesting projects and I believe my development skills have grown quite significantly. 
+					I know a number of programming languages, as I have been learning and sharpening my programming skills for 1 and a half years now. My favourite programming language is Java. 
+					I'm passionate about programming and learning new technologies everyday and I enjoy solving problems.
+					I am currently studying, ICT: Applications Development, at the Durban university of technology. 
+					I have a lot of free time so I would love to acquire a job as a junior software developer and improve my skills further. </p>
+				</div> 
+			</div>
+			
+			<center><h1>My Skills</h1></center><br />
+			<div class="skills">
+			    <h2 class="text-center">Front-End</h2><br />
+				<div class="skil_bars">
+					<h4>HTML, CSS & Bootstrap<h4>
+					<div class="progress">
+						<div class="progress-bar" style="width:90%">90%</div>
+					</div>
+					<h4>Java Script<h4>
+					<div class="progress">
+						<div class="progress-bar" style="width:76%">76%</div>
+					</div>
+					<h4>Java<h4>
+					<div class="progress">
+						<div class="progress-bar" style="width:80%">80%</div>
+					</div>
+					<h4>React<h4>
+					<div class="progress">
+						<div class="progress-bar" style="width:80%">80%</div>
+					</div>
+				</div><br>
+				<h2 class="text-center">Back-End</h2><br />
+				<div class="skil_bars">
+					<h4>PHP<h4>
+					<div class="progress">
+						<div class="progress-bar" style="width:65%">65%</div>
+					</div>
+					<h4>Node.js<h4>
+					<div class="progress">
+						<div class="progress-bar" style="width:70%">70%</div>
+					</div>
+					<h4>MYSQL<h4>
+						<div class="progress">
+							<div class="progress-bar" style="width:60%">60%</div>
+						</div>
+				</div><br />
+			</div><br />
+				
+			<center><h1>Contact</h1></center><br />
+
+			<div id="contacts">
+				<p class="text-center"><em>I'd love your feedback!</em></p>
+  				<div class="conatainer">
+					<div class="col-sm-6">
+
+						<div id="contacts" class="col-sm-8">
+						    <i class="fa fa-mobile" style="color: #000;" aria-hidden="true"></i> Phone: +2779 951 4260<br>
+							<i class="fa fa-envelope" style="color: #000;" aria-hidden="true"></i> Email: phillgaxsphe@gmail.com<br>
+							<i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="">Linked-in: linkedin.com/in/sphelele-mkhize-3098021b5</a><br>
+							<i class="fa fa-brands fa fa-github"></i></i> Github: Paxton425
+						</div>
+
+      		            <form class="col-sm-12" style="padding: 5px" target="_blank">
+							<div class="row" style="padding: 0;">
+								<div class="col mb-3 mt-3">
+									<label for="name" class="form-label">Email:</label>
+									<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+								  </div>
+								<div class="col mb-3 mt-3">
+									<label for="email" class="form-label">Email:</label>
+									<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+								</div>
+								<div class="">
+									<label for="comment">Comments:</label>
+								    <textarea class="form-control" rows="3" id="comment" name="text"></textarea>
+								</div>
+							</div>
+                            <button class="actionBtn" onclick="sendEmail()" type="button">
+         					 	<i class="fa fa-paper-plane"></i> SEND MESSAGE
+        			        </button>
+     					</form>
+    				</div>
+  			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="app_footer">
+		<!-- Footer -->
+		<footer class="text-center" style="background-color: #000; height: 200px; padding-top: 100px; color: #fff;">
+		    <center style="padding: 5px";>
+			<button onclick="toTheTop()" class="home_button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</button>
+			<div class="w3-xlarge w3-section">
+				<i class="fa fa-facebook-official w3-hover-opacity"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-snapchat"></i>
+				<i class="fa fa-pinterest-p"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-linkedin"></i>
+			</div>
+			</center>
+		</footer>
+	</div>
+	</body>
+	<script type="text/javascript">
+		(function(){
+		   emailjs.init("QojJ_BogvE350DH19");
+		})();
+
+		function sendEmail(){
+			let name = document.querySelector('#name').value;
+			let email = document.querySelector('#email').value;
+			let comment = document.querySelector('#comment').value;
+
+			var templateParams = {
+				from_name: name,
+				from_email: email,
+    			to_name: 'Sphelele',
+    			message: comment
+			};
+
+			console.log(templateParams);
+ 
+		emailjs.send('service_pc0ttn5', 'template_2xg17wn', templateParams)
+        .then(function(response) {
+       			console.log('SUCCESS!', response.status, response.text);
+				alert('Email Sent!');
+				location.reload();
+    		}, function(error) {
+				alert('Something Went wrong')
+     	    	console.log('FAILED...', error);
+    		});
+		}
+	</script>
+	<script type="text/babel">
+		let menu_items = document.querySelectorAll('.menuitem');
+		const menu_btn = document.querySelector('.nav_menu_btn');
+
+		function toTheTop(){window.scrollTo(0, 0);}
+		
+		window.onload = function () {
+			//const p_anchor = document.getElementById('portfolio_anchor');
+			//p_anchor.addEventListener('click', open_portfolio, false);
+			console.log('added');
+		}
+		//Mobile dropdown menu
+		let displayed = false;
+		menu_btn.addEventListener('click', ()=>{
+			console.log(displayed);
+			if(displayed == false){
+				for(let i=0; i<4; i++){
+					menu_items[i].style.display ="block";
+				}
+				displayed = true;
+			}else{
+				for(let i=0; i<4; i++){
+					menu_items[i].style.display ="none";
+				}
+				displayed = false;
+			}
+		});
+	</script>
+	<script type="text/babel" src="Portfolio.js"></script>
+	<script type="text/babel">
+		const home1 = document.querySelectorAll('#home');
+		const home2 = document.querySelector('#home2');
+
+		const demodata={
+            title: 'JS Code Editor Project',
+            Images: ['images/Projects/Screenshot 2022-11-02 230434.png', 'images/Projects/Screenshot 2022-11-05 044541.png'],
+            descrition: 'Simple java script code Editor project',
+            video: 'videos/editor.mp4'
+        }
+		let currEl ='';
+		function viewList(){
+			//home1.map((element) => {element.style.display = "none";})
+			home2.style.display = "block";
+			ReactDOM.render(<Portfolio />, document.querySelector('.documentBody'));
+			currEl = 'pf';
+		}
+		function goBack() {
+			if(currEl == "pf"){
+				location.reload();
+			}else if(currEl == "pv"){
+				viewList();
+			}
+		}
+		let viewProject=(data)=>(e)=>{
+			ReactDOM.render(<ProjectView Data={data} />, document.querySelector('.documentBody'));
+			currEl = 'pv';
+		}
+	</script>
+</html>
